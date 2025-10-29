@@ -1,0 +1,210 @@
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  color: #202b3a;
+}
+
+.navbar {
+  background: #fff;
+  border-bottom: 1px solid #eff4fb;
+  display: flex;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  font-size: 1.32em;
+  font-weight: 700;
+  color: #2176ff;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a, .navbar .btn {
+  margin-left: 1.3rem;
+  text-decoration: none;
+  color: #2176ff;
+  font-weight: 500;
+}
+.navbar .btn-primary { background: #2176ff; color: white; border-radius:6px; padding: 7px 20px; }
+.navbar .btn-primary:hover { background: #1a5ec6;}
+.navbar .btn-secondary { background: #e9f4ff; color: #2176ff; border-radius:6px; padding: 7px 20px;}
+.navbar .btn-secondary:hover { background: #bedafd;}
+.user-name{margin-left:2rem;font-weight:700;}
+
+.hero {
+  text-align: center;
+  padding: 7rem 2rem 3rem 2rem;
+  background: linear-gradient(120deg, #2176ff 40%, #cff4ff 100%);
+  color: #fff;
+}
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
+}
+.hero p {
+  font-size: 1.2em;
+  opacity: 0.97;
+}
+.btn {
+  display: inline-block;
+  font-size: 1.10em;
+  padding: 0.7rem 2.2rem;
+  border: none;
+  border-radius: 7px;
+  background: #2176ff;
+  color: white;
+  margin-top: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right:1rem;
+}
+.btn-large{padding:0.9rem 2.5rem;}
+.btn-secondary { background: #e9f4ff; color: #2176ff;}
+.btn-secondary:hover { background: #bedafd; color: #2176ff;}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  color: #a4aabc;
+  background: none;
+}
+
+.centered-card {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f7fa;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 30px rgba(33,119,255,0.08);
+  padding: 2.5rem 2rem;
+  min-width: 350px;
+  text-align: center;
+}
+.card-title {
+  font-size: 1.32em;
+  font-weight: bold;
+  color: #2176ff;
+  margin-bottom: 1.3rem;
+}
+form input {
+  width: 100%;
+  font-size: 1em;
+  padding: 12px;
+  border: 1px solid #c0c7d6;
+  border-radius: 6px;
+  margin-bottom: 14px;
+  margin-top: 4px;
+}
+form button {
+  width: 100%;
+  margin-top: 5px;
+}
+.form-switch {
+  margin-top: 1em;
+}
+.response-message {
+  color: #156430;
+  margin-top: 0.85em;
+  font-weight: 500;
+  min-height: 18px;
+}
+
+.dashboard-container{
+  display: flex;
+  min-height: 100vh;
+}
+.sidebar{
+  background:#fff;
+  border-right:1px solid #eff4fb;
+  width: 210px;
+  min-height: 100vh;
+  padding:2.5rem 1.2rem 0.8rem 1rem;
+}
+.sidebar ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar ul li{
+    text-decoration: none;
+  font-size: 1.17em;
+  color:#2176ff;
+  margin-bottom:22px;
+  font-weight:600;
+  cursor:pointer;
+  padding:0.4em 0.65em;
+  border-radius:8px;
+
+}
+.sidebar ul li.active, .sidebar ul li:hover, .sidebar ul li:visited{
+  background: #eff8ff;
+  color: #2176ff;
+}
+.dashboard-main{
+  flex: 1;
+  padding:2.5rem 3.5rem;
+}
+.stats-row{
+  display:flex;
+  gap: 1.2em;
+  margin-bottom: 2.5em;
+}
+.stat-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 11px;
+  box-shadow: 0 6px 20px rgba(205,235,255,0.15);
+  padding: 1.2rem 2rem;
+}
+.stat-icon {
+  font-size: 2.5em;
+  margin-right: 1.1em;
+  color: #2176ff;
+  background: #e9f4ff;
+  border-radius: 10px;
+  padding: 0.4em 0.5em;
+  margin-right:1.2em;
+}
+.stat-main {
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom:0.1em;
+}
+.stat-label {
+  color: #64707d;
+  font-size: 1.06em;
+}
+.charts-row {
+  display: flex;
+  gap: 2em;
+}
+.chart-box {
+  background: #fff;
+  border-radius: 13px;
+  box-shadow:0 6px 20px rgba(205,235,255,0.13);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  flex: 1;
+}
+.chart-box h3 {
+  text-align:center;
+  margin-bottom: 1.4rem;
+  color: #202b3a;
+  font-size: 1.22em;
+}
+@media (max-width:900px){
+  .dashboard-container{flex-direction:column;}
+  .sidebar{width:100%;min-height:unset;padding:1.2em;}
+  .dashboard-main{padding:2em 1em;}
+  .stats-row,.charts-row{flex-direction:column;}
+}

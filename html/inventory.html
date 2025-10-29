@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inventory - PharmaLoop AI</title>
+  <link rel="stylesheet" href="/CSS/inventory.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <span class="logo">PharmaLoop AI</span>
+        <button id="homeBtn" class="btn-home">Home</button>
+    </nav>
+
+
+  <main class="container">
+    <h1>Enter Shop Stock</h1>
+    <form id="inventoryForm">
+      <label for="medicineName">Medicine Name</label>
+      <input type="text" id="medicineName" name="medicineName" required />
+
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" name="quantity" min="1" required />
+
+      <label for="expiryDate">Expiry Date</label>
+      <input type="date" id="expiryDate" name="expiryDate" required />
+
+      <label for="batchNumber">Batch Number</label>
+      <input type="text" id="batchNumber" name="batchNumber" />
+
+      <button type="submit" class="btn-primary">Add Stock</button>
+    </form>
+
+    <div id="responseMessage"></div>
+  </main>
+
+  <script src="/JS/inventory.js"></script>
+</body>
+</html>
